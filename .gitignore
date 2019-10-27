@@ -1,2 +1,4 @@
 /tsc/data/**
+!/tsc/data/README.md
 /tsc/embeddings/**
+!/tsc/embeddings/README.md
