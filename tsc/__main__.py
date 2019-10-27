@@ -60,8 +60,9 @@ stance_categories = ['secularismPolarity', 'religiousFreedomPolarity',
 
 def main(preprocessing, feature, target, n, k, metric, kernel, c):
 
-    #if not os.path.isfile(json_path):
-    #    convert_corpus_to_json(corpus_path, json_path)
+    if not os.path.isfile(json_path):
+        convert_corpus_to_json(corpus_path, json_path)
+
     print(80*'#')
     print('\nFeature: {}'.format(feature))
 

@@ -1,4 +1,4 @@
-/tsc/data/**
-!/tsc/data/README.md
+/tsc/data/atheism_stance_corpus.txt
+/tsc/data/corpus_txt
 /tsc/embeddings/**
 !/tsc/embeddings/README.md
