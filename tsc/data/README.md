@@ -1,1 +1,1 @@
-This directory contains the tweet data.
+This directory will contain the tweet data.

@@ -1,1 +1,1 @@
-This data contains the pretrained embeddings.
+This directory will contain the pretrained embeddings.
