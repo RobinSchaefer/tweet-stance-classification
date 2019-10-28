@@ -55,7 +55,7 @@ For a full description of options and parameters, run:
 ## Current Issues 
 
 - No installation via setup.py
-- Universal Sentence Encoder model needs to be fixed.
+- Universal Sentence Encoder model needs to be fixed
 
 ## License
 
