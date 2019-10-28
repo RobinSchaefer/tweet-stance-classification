@@ -224,7 +224,7 @@ def create_vocabulary(data, limit = None):
 
     return vocab, vocab_index_mapping
 
-def create_word_embeddings(data, model_type = 'use', vector_path='TOBEFILLED'):
+def create_word_embeddings(data, model_type = 'use', vector_path=''):
     '''
     Create embeddings.
 
@@ -242,7 +242,7 @@ def create_word_embeddings(data, model_type = 'use', vector_path='TOBEFILLED'):
 
     if model_type == 'fasttext':
         embeddings = create_fasttext_embeddings(data, vector_path=vector_path)
-    elif model_type == 'glove300':
+    elif model_type == 'glove200' or model_type == 'glove300':
         embeddings = create_glove_embeddings(data, vector_path=vector_path)
     elif model_type == 'use':
         embeddings = create_use_embeddings(data)

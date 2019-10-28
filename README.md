@@ -11,14 +11,13 @@ Conference on Artificial Intelligence (KI 2019). Kassel, Germany, 2019.
 
 ## Installation
 
+This code was written for Python 3.
+
 Set up a virtualenv and run:
 
-<code>pip install -e ./</code>
+<code>pip3 install -r requirements.txt</code>
 
-This code makes use of several pretrained embedding and data resources. Download and store them in the respective directory:
-
-English tweet data (in /tsc/data):
-https://github.com/muchafel/AtheismStanceCorpus
+This code makes use of several pretrained embeddings. Download and store them in the respective directory:
 
 fastText vectors (in /tsc/embeddings):
 https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip
@@ -29,6 +28,9 @@ https://nlp.stanford.edu/data/glove.twitter.27B.zip
 GloVe vectors (300d) (in /tsc/embeddings):
 https://nlp.stanford.edu/data/glove.42B.300d.zip
 
+The tweet data can be downloaded from here: https://github.com/muchafel/AtheismStanceCorpus
+
+We already reshaped, tokenized and stored it in /tsc/data.
 
 ## Usage
 

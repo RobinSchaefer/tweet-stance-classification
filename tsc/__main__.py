@@ -25,7 +25,8 @@ corpus_path = cwd + '/tsc/data/atheism_stance_corpus.txt'
 json_path = cwd + '/tsc/data/atheism_stance_corpus.json'
 tokenized_path = cwd + '/tsc/data/corpus_tokenized'
 fasttext_vectors_path = cwd + '/tsc/embeddings/wiki-news-300d-1M.vec'
-glove_vectors_path =  cwd + '/tsc/embeddings/glove.42B.300d.txt'
+glove200_vectors_path = cwd + '/tsc/embeddings/glove.twitter.27B.200d.txt'
+glove300_vectors_path =  cwd + '/tsc/embeddings/glove.42B.300d.txt'
 
 ### PREPROCESSING PARAMETERS ###
 stop_list = stopwords.words('english')
@@ -88,8 +89,11 @@ def main(preprocessing, feature, target, n, k, metric, kernel, c):
     elif feature == 'fasttext':
         X = create_word_embeddings(preprocessed_data, model_type=feature, vector_path=fasttext_vectors_path)
         X = reshape_array(X)
+    elif feature == 'glove200':
+        X = create_word_embeddings(preprocessed_data, model_type=feature, vector_path=glove200_vectors_path)
+        X = reshape_array(X)
     elif feature == 'glove300':
-        X = create_word_embeddings(preprocessed_data, model_type=feature, vector_path=glove_vectors_path)
+        X = create_word_embeddings(preprocessed_data, model_type=feature, vector_path=glove300_vectors_path)
         X = reshape_array(X)
     elif feature == 'use':
         X = create_word_embeddings(preprocessed_data, model_type=feature)
