@@ -52,6 +52,11 @@ For a full description of options and parameters, run:
 
 <code>python -m tsc --help</code>
 
+## Current Issues 
+
+- No installation via setup.py
+- Universal Sentence Encoder model needs to be fixed.
+
 ## License
 
 MIT License
